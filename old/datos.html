@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="datos.html" class="fondonavbar">DATOS</a>
+        <a href="recibo.html">RECIBO</a>
+    </div>
+
+    <!-- INICIO FORMULARIO  -->
+    <!-- 
+        GET: SE VE POR LA URL (SE USA PARA TESTEAR)  
+        POST: ES EL METODO FINAL PARA EL USUARIO
+        table>tr*7>td*2
+    -->
+
+    <h1 id="titulo">Datos del Perrito</h1>
+
+    <div id="formulario">
+        <form action="recibo.html" method="GET">
+
+            <label for="txtNombre">Nombre del Perrito:</label> 
+            <input type="text" name="txtNombre" id="txtNombre">
+
+            <label for="txtDueno">Nombre del Dueño:</label>
+            <input type="text" name="txtDueno" id="txtDueno">
+
+            <label for="txtFecha">Fecha de Nacimiento:</label>
+            <input type="date" name="txtFecha" id="txtFecha">
+
+            <label for="txtImagen">Imagen del perrito:</label>
+            <input type="file" name="txtImagen" id="txtImagen">
+            
+            <label for="txtEdad">Edad del perrito:</label>
+            <input type="number" name="txtEdad" id="txtEdad">
+
+            <label for="txtPass">Contraseña: </label>
+            <input type="password" name="txtPass" id="txtPass" >
+            
+            <input type="submit" name="btnEnviar" id="btnEnviar" class="btn btn-verde">
+            <input type="reset" name="btnLimpiar" id="btnLimpiar" class="btn btn-rojo">
+                       
+        </form>
+    </div>
+    <!-- FIN FORMULARIO  -->
+
+    <!-- 
+        etiqueta#nombre = ID por ejemplo div#formulario = <div id="formulario">
+        etiqueta.nombre = CSS por ejemplo  div.formulario = <div class="formulario">
+      -->
+    <footer>
+        <div id="piedepagina">
+            <h2>PAGINA CREADA POR LA COMPAÑIA DE LOS K DEL DUOC 2021</h2>
+            <img src="" alt="">
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
